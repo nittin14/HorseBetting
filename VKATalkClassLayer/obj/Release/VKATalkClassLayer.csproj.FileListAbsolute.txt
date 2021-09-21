@@ -1,0 +1,15 @@
+E:\VKATalk\VKATalk\VKATalkClassLayer\bin\Release\VKATalkClassLayer.dll
+E:\VKATalk\VKATalk\VKATalkClassLayer\bin\Release\VKATalkClassLayer.pdb
+E:\VKATalk\VKATalk\VKATalkClassLayer\obj\Release\VKATalkClassLayer.dll
+E:\VKATalk\VKATalk\VKATalkClassLayer\obj\Release\VKATalkClassLayer.pdb
+E:\VKATalk\VKATalk\VKATalkClassLayer\obj\Release\VKATalkClassLayer.csprojResolveAssemblyReference.cache
+E:\test\VKATalk\VKATalkClassLayer\bin\Release\VKATalkClassLayer.dll
+E:\test\VKATalk\VKATalkClassLayer\bin\Release\VKATalkClassLayer.pdb
+E:\test\VKATalk\VKATalkClassLayer\obj\Release\VKATalkClassLayer.csprojResolveAssemblyReference.cache
+E:\test\VKATalk\VKATalkClassLayer\obj\Release\VKATalkClassLayer.dll
+E:\test\VKATalk\VKATalkClassLayer\obj\Release\VKATalkClassLayer.pdb
+D:\VKATalk\VKATalk\VKATalkClassLayer\bin\Release\VKATalkClassLayer.dll
+D:\VKATalk\VKATalk\VKATalkClassLayer\bin\Release\VKATalkClassLayer.pdb
+D:\VKATalk\VKATalk\VKATalkClassLayer\obj\Release\VKATalkClassLayer.csproj.CoreCompileInputs.cache
+D:\VKATalk\VKATalk\VKATalkClassLayer\obj\Release\VKATalkClassLayer.dll
+D:\VKATalk\VKATalk\VKATalkClassLayer\obj\Release\VKATalkClassLayer.pdb

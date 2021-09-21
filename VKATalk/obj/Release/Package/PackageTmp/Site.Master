@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs"  Inherits="VKATalk.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<title>VKATalk</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="Styles/style.css" media="screen" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <form id="Form1" runat="server">
+<div id="main_container">
+  
+  <div class="navigation modify-navigation">
+      <asp:Menu ID="NavigationMenu" runat="server" EnableViewState="false" Orientation="Horizontal" Width="925px">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Admin">
+                            <asp:MenuItem NavigateUrl="~/Admin/AddUserCreation.aspx" Text="User Creation"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/AdminChangePasssword.aspx" Text="Change Password"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/AdminManageUser.aspx" Text="Authentication"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="" Text="Data Handler"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="" Text="Menu N Forms"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/RacingWebsites.aspx" Text="Racing Websites" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="" Text="Organiser"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="" Text="Masters">
+                            <asp:MenuItem NavigateUrl="~/Master/AddCenter.aspx" Text="Center" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddYear.aspx" Text="Year" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddSeason.aspx" Text="Season" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddNation.aspx" Text="Nation" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddDistance.aspx" Text="Distance" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/MasterHandicapRatingRange.aspx" Text="Handicap Rating Range" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/MasterBunchCondition.aspx" Text="Bunch Condition" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/AddAgeCondition.aspx" Text="Age Condition" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddEquipment.aspx" Text="Equipment" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddBit.aspx" Text="Bit" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddRatingMarkFormatStyle.aspx" Text="Rating Mark Format Style" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddMasterHorseSex.aspx" Text="Horse Sex" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/MasterHorseColor.aspx" Text="Horse Color" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/VerdictMargin.aspx" Text="Verdict Margin" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/MasterProfessionalBackground.aspx" Text="Professional Background" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/MasterCurrentForm.aspx" Text="Current Form" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/MasterReligion.aspx" Text="Religion" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/ProspectusMasterPermanentCondition.aspx" Text="Permanent Condition" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/ProspectusGeneralSeasonalCondition.aspx" Text="Seasonal Condition" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/MasterRaceCardCondition.aspx" Text="Race Card Condition" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/MasterHandicapWeightPenaltyCondition.aspx" Text="HWP Condition" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/MasterHandicapWeightPenaltyCriteria.aspx" Text="HWP Criteria" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/AddClass.aspx" Text="Class" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddClassGroup.aspx" Text="Class Group" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddOwnerColor.aspx" Text="Owner Color" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddIncident.aspx" Text="Incident" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/MasterDisease.aspx" Text="Disease" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/MasterYearCenterWise.aspx" Text="Year CenterWise" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/AddSeasonDescription.aspx" Text="Season Description" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddDistanceGroup.aspx" Text="Distance Group" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddShoe.aspx" Text="Shoe" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddTipster.aspx" Text="Tipster" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddSelector.aspx" Text="Selector" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddHotliner.aspx" Text="Hotliner" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddHabit.aspx" Text="Habit" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddNBCondition.aspx" Text="NB Condition" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddScaleOfWeight.aspx" Text="Scale Of Weight" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddStakeMoney.aspx" Text="Stake Money" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddRaceTimings.aspx" Text="Race Timings" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddMasterAllowance.aspx" Text="Allowance" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddDiscardRules.aspx" Text="Discard Rules" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddHorseRetirementAge.aspx" Text="Horse Retirement Age" Target="_blank"></asp:MenuItem>
+                            
+                            <asp:MenuItem NavigateUrl="~/Master/AddHorse.aspx" Text="Horse" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Master/AddProfessional.aspx" Text="Professional" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/AddProspectus.aspx" Text="Prospectus Master" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Master/ProspectusGeneral.aspx" Text="Prospectus General" Target="_blank" />
+                            <asp:MenuItem NavigateUrl="~/Card/ProspectusDivision.aspx" Text="Prospectus Division" Target="_blank"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="" Text="Cards">
+                            <asp:MenuItem NavigateUrl="~/Card/EntryFast.aspx" Text="Entry Fast" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/Entry.aspx" Text="Entry" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/Handicap.aspx" Text="Handicap" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/Acceptance.aspx" Text="Acceptance" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/Declaration.aspx" Text="Declaration" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/RaceCard.aspx" Text="Race Card" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/CardResult.aspx" Text="Result" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/RevisedHandicapRating.aspx" Text="Revised Rating" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/RaceDayReport.aspx" Text="Race Day Report" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/RaceReview.aspx" Text="Race Review" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/CardVeterinary.aspx" Text="Veterinary" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/CardOdds.aspx" Text="Odds" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/CardSwimming.aspx" Text="Swimming" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/CardTreadmill.aspx" Text="Track Work" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/MockRaceEntry.aspx" Text="Mock Race" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/CardGatePractiseEntry.aspx" Text="Gate Practice" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/Hotline.aspx" Text="Hotline" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/CardSelection.aspx" Text="Selection" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/CardTrack.aspx" Text="Track" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="" Text="Tips"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/RaceDaySituation.aspx" Text="Day Racing Situation" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="" Text="Final Analysis" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="" Text="Peddock Handicapping"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="" Text="Betting"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="" Text="Horse Reminder"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Card/CardWorkout.aspx" Text="Card Workout"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="" Text="Reports">
+                            <asp:MenuItem NavigateUrl="~/Reports/RaceAllReportDetails.aspx" Text="Mastr Hyperlink Sheet" Target="_blank"></asp:MenuItem>
+                            </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+  </div>
+    <div id="top_banner">
+  </div>
+  
+    <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <section class="content-wrapper main-content clear-fix">
+                <div>
+                  <span style="align-content:center"> <b> Database Connected: <asp:Label ID="lbldatabaseName" runat="server"></asp:Label></b></span>
+            </div>
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
+<div id="footer">
+ 
+</div>
+        </div>
+        </form>
+        </body>
+</html>

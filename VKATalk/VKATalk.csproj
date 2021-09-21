@@ -1,0 +1,1842 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0CCC3710-82EA-438B-AC8F-BA092B461C1E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VKATalk</RootNamespace>
+    <AssemblyName>VKATalk</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <StyleCopTreatErrorsAsWarnings>True</StyleCopTreatErrorsAsWarnings>
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <ExcludeGeneratedDebugSymbol>false</ExcludeGeneratedDebugSymbol>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.16.1.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.11\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.0\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="VKATalkBusinessLayer">
+      <HintPath>..\VKATalkBusinessLayer\bin\Debug\VKATalkBusinessLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="VKATalkClassLayer">
+      <HintPath>..\VKATalkClassLayer\bin\Debug\VKATalkClassLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Card\Acceptance.aspx" />
+    <Content Include="Card\CardResult.aspx" />
+    <Content Include="Card\CardWorkout.aspx" />
+    <Content Include="Card\CardSwimming.aspx" />
+    <Content Include="Card\CardVeterinary.aspx" />
+    <Content Include="Card\CardOdds.aspx" />
+    <Content Include="Card\CardTreadmill.aspx" />
+    <Content Include="Card\CardTip.aspx" />
+    <Content Include="Card\CardSelection.aspx" />
+    <Content Include="Card\CardGatePractiseEntry.aspx" />
+    <Content Include="Card\CardTrack.aspx" />
+    <Content Include="Card\MockRaceEntry.aspx" />
+    <Content Include="Card\Hotline.aspx" />
+    <Content Include="Card\RaceDaySituation.aspx" />
+    <Content Include="Card\RaceReview.aspx" />
+    <Content Include="Card\RaceDayIncident.aspx" />
+    <Content Include="Card\RaceDayReport.aspx" />
+    <Content Include="Card\ResultLapTiming.aspx" />
+    <Content Include="Card\ResultSectionalTiming.aspx" />
+    <Content Include="Card\ResultRaceCommentary.aspx" />
+    <Content Include="Card\RevisedHandicapRating.aspx" />
+    <Content Include="Card\RaceCard.aspx" />
+    <Content Include="Card\ProspectusDivision.aspx" />
+    <Content Include="Card\Entry.aspx" />
+    <Content Include="Card\Declaration.aspx" />
+    <Content Include="Card\Handicap.aspx" />
+    <Content Include="Card\EntryFast.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="App_Code\Global.asax" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bg-footer.gif" />
+    <Content Include="Images\bg.gif" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\calendar.png" />
+    <Content Include="Images\center_bg.gif" />
+    <Content Include="Images\csscreme.jpg" />
+    <Content Include="Images\demopic.gif" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\login.gif" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Images\p1.jpg" />
+    <Content Include="Images\separator.gif" />
+    <Content Include="Images\team.gif" />
+    <Content Include="Images\TickMark.png" />
+    <Content Include="Images\title.gif" />
+    <Content Include="Images\tryadmin.gif" />
+    <Content Include="Images\trythedemo.gif" />
+    <Content Include="Master\AddBit.aspx" />
+    <Content Include="Master\AddCenter.aspx" />
+    <Content Include="Master\AddClass.aspx" />
+    <Content Include="Master\AddClassGroup.aspx" />
+    <Content Include="Master\AddDiscardRules.aspx" />
+    <Content Include="Master\AddDistance.aspx" />
+    <Content Include="Master\AddDistanceGroup.aspx" />
+    <Content Include="Master\AddEquipment.aspx" />
+    <Content Include="Master\AddHabit.aspx" />
+    <Content Include="Master\AddHorse.aspx" />
+    <Content Include="Master\AddHorseRetirementAge.aspx" />
+    <Content Include="Master\AddHotliner.aspx" />
+    <Content Include="Master\AddIncident.aspx" />
+    <Content Include="Master\AddMasterAllowance.aspx" />
+    <Content Include="Master\AddMasterHorseSex.aspx" />
+    <Content Include="Master\AddNation.aspx" />
+    <Content Include="Master\AddNBCondition.aspx" />
+    <Content Include="Master\AddOwnerColor.aspx" />
+    <Content Include="Master\AddProspectus.aspx" />
+    <Content Include="Master\AddRaceTimings.aspx" />
+    <Content Include="Master\AddRatingMarkFormatStyle.aspx" />
+    <Content Include="Master\AddScaleOfWeight.aspx" />
+    <Content Include="Master\AddSeason.aspx" />
+    <Content Include="Master\AddSeasonDescription.aspx" />
+    <Content Include="Master\AddSelector.aspx" />
+    <Content Include="Master\AddShoe.aspx" />
+    <Content Include="Master\AddStakeMoney.aspx" />
+    <Content Include="Master\AddTipster.aspx" />
+    <Content Include="Master\AddYear.aspx" />
+    <Content Include="Master\AddProfessional.aspx" />
+    <Content Include="Master\AddAgeCondition.aspx" />
+    <Content Include="Master\MasterYearCenterWise.aspx" />
+    <Content Include="Master\MasterHandicapWeightPenaltyCriteria.aspx" />
+    <Content Include="Master\MasterHandicapWeightPenaltyCondition.aspx" />
+    <Content Include="Master\MasterCurrentForm.aspx" />
+    <Content Include="Master\MasterProfessionalBackground.aspx" />
+    <Content Include="Master\MasterReligion.aspx" />
+    <Content Include="Master\MasterHandicapRatingRange.aspx" />
+    <Content Include="Master\MasterRaceCardCondition.aspx" />
+    <Content Include="Master\MasterBunchCondition.aspx" />
+    <Content Include="Master\ProspectusGeneralSeasonalCondition.aspx" />
+    <Content Include="Master\ProspectusMasterPermanentCondition.aspx" />
+    <Content Include="Master\MasterDisease.aspx" />
+    <Content Include="Master\VerdictMargin.aspx" />
+    <Content Include="Master\ProspectusGeneral.aspx" />
+    <Content Include="Master\MasterHorseColor.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="PopUps\CommonExport.aspx" />
+    <Content Include="PopUps\AddHorseOwnerStud.aspx" />
+    <Content Include="Card\ResultToteDivident.aspx" />
+    <Content Include="PopUps\HorseTreadmill.aspx" />
+    <Content Include="PopUps\HorseSwimming.aspx" />
+    <Content Include="PopUps\ProfessionalPenalty.aspx" />
+    <Content Include="PopUps\ProfessionalJockeyAllowanceStage.aspx" />
+    <Content Include="PopUps\ProspectusMasterBunch.aspx" />
+    <Content Include="PopUps\ProspectusMasterRaceAbbriviation.aspx" />
+    <Content Include="PopUps\ProspectusMasterStakeMoneyAddition.aspx" />
+    <Content Include="PopUps\ProspectusMasterOtherCondition.aspx" />
+    <Content Include="PopUps\ProspectusMasterRaceHistory.aspx" />
+    <Content Include="PopUps\ProspectusMasterHandicapWeightAsPerAge.aspx" />
+    <Content Include="PopUps\HandicapBan.aspx" />
+    <Content Include="PopUps\ProspectusMasterHandicapWeight.aspx" />
+    <Content Include="PopUps\ProspectusGeneralRaceCardCondition.aspx" />
+    <Content Include="PopUps\ProspectusGeneralSeasonalCondition.aspx" />
+    <Content Include="PopUps\ProspectusMasterBunchCondition.aspx" />
+    <Content Include="PopUps\ProspectusMasterHWPCondition.aspx" />
+    <Content Include="PopUps\ProspectusMasterInterestedProfessionalBackground.aspx" />
+    <Content Include="PopUps\ProfessionalBackground.aspx" />
+    <Content Include="PopUps\ProfessionalAntiPerson.aspx" />
+    <Content Include="PopUps\ProfessionalReligion.aspx" />
+    <Content Include="PopUps\HorseCurrentForm.aspx" />
+    <Content Include="PopUps\ProspectusMasterPermanentCondition.aspx" />
+    <Content Include="PopUps\ProspectusGeneralDates.aspx" />
+    <Content Include="PopUps\ProspectusGeneralObservation.aspx" />
+    <Content Include="PopUps\ProspectusMasterMomenttoCost.aspx" />
+    <Content Include="PopUps\ProspectusMasterMomenttoType.aspx" />
+    <Content Include="PopUps\ProspectusGeneralRaceNewName.aspx" />
+    <Content Include="PopUps\ProspectusGeneralRaceName.aspx" />
+    <Content Include="PopUps\ProspectusMasterGradedNo.aspx" />
+    <Content Include="PopUps\ProspectusMasterGraded.aspx" />
+    <Content Include="PopUps\ProspectusMasterClassic.aspx" />
+    <Content Include="PopUps\ProspectusMasterSweepStake.aspx" />
+    <Content Include="PopUps\ProspectusMasterMillion.aspx" />
+    <Content Include="PopUps\ProspectusMasterRaceStatus.aspx" />
+    <Content Include="PopUps\ProspectusMasterAgeCondition.aspx" />
+    <Content Include="PopUps\ProspectusMasterEligbleHandRatingRange.aspx" />
+    <Content Include="PopUps\ProspectusMasterHanRatingRange.aspx" />
+    <Content Include="PopUps\ProspectusMasterRaceType.aspx" />
+    <Content Include="PopUps\ProspectusMasDistance.aspx" />
+    <Content Include="PopUps\ProspectusMomenttoPresenter.aspx" />
+    <Content Include="PopUps\ProspectusSponcer.aspx" />
+    <Content Include="PopUps\ProspectusRaceMemoryOf.aspx" />
+    <Content Include="PopUps\ProspectusMasterRaceNewName.aspx" />
+    <Content Include="PopUps\ProspectusMasterRaceName.aspx" />
+    <Content Include="PopUps\ProfessionalRelation.aspx" />
+    <Content Include="PopUps\ProfessionalMyObservation.aspx" />
+    <Content Include="PopUps\ProfessionalImportantDates.aspx" />
+    <Content Include="PopUps\ProfessionalHabit.aspx" />
+    <Content Include="PopUps\ProfessionalFavHomeClass.aspx" />
+    <Content Include="PopUps\ProfessionalHomeClass.aspx" />
+    <Content Include="PopUps\ProfessionalFavDistanceGroup.aspx" />
+    <Content Include="PopUps\ProfessionalHomeDistance.aspx" />
+    <Content Include="PopUps\ProfessionalPartners.aspx" />
+    <Content Include="PopUps\ProfessionalTrainerAssistant.aspx" />
+    <Content Include="PopUps\ProfessionalJockeyAprenticeOf.aspx" />
+    <Content Include="PopUps\ProfessionalOtherName.aspx" />
+    <Content Include="PopUps\ProfessionalJockeyWeight.aspx" />
+    <Content Include="PopUps\ProfessionalCurrentStatus.aspx" />
+    <Content Include="PopUps\ProfessionalStatus.aspx" />
+    <Content Include="PopUps\ProfessionalOwnerColor.aspx" />
+    <Content Include="PopUps\ProfessionalProfile.aspx" />
+    <Content Include="PopUps\ProfessionalBaseCenter.aspx" />
+    <Content Include="PopUps\ProfessionalNewName.aspx" />
+    <Content Include="PopUps\ProfessionalName.aspx" />
+    <Content Include="PopUps\HorseBandage.aspx" />
+    <Content Include="PopUps\HorseMyObservations.aspx" />
+    <Content Include="PopUps\HorseVeterinaryProblem.aspx" />
+    <Content Include="PopUps\HorseHabit.aspx" />
+    <Content Include="PopUps\HorseRunningStyle.aspx" />
+    <Content Include="PopUps\HorseLikingEnviornment.aspx" />
+    <Content Include="PopUps\HorseSaddleNo.aspx" />
+    <Content Include="PopUps\HorseShoeDescription.aspx" />
+    <Content Include="PopUps\DirectGate.aspx" />
+    <Content Include="PopUps\HorseTrackStar.aspx" />
+    <Content Include="PopUps\HorseBit.aspx" />
+    <Content Include="PopUps\HorseEquipment.aspx" />
+    <Content Include="PopUps\HorseShoe.aspx" />
+    <None Include="Properties\PublishProfiles\VKATalk.pubxml" />
+    <Content Include="PopUps\AddHorseStatus.aspx" />
+    <Content Include="PopUps\ClassPerformance.aspx" />
+    <Content Include="PopUps\ClassPerformanceOld.aspx" />
+    <Content Include="PopUps\BodyWeight.aspx" />
+    <Content Include="PopUps\MyHandicapRating.aspx" />
+    <Content Include="PopUps\HandicapRating.aspx" />
+    <Content Include="PopUps\TargetRace.aspx" />
+    <Content Include="PopUps\TrainerActual.aspx" />
+    <Content Include="PopUps\TrainerRecord.aspx" />
+    <Content Include="PopUps\OwnerActual.aspx" />
+    <Content Include="PopUps\OwnerRecord.aspx" />
+    <Content Include="PopUps\HorseRunningCenter.aspx" />
+    <Content Include="PopUps\HorseBaseCenter.aspx" />
+    <Content Include="PopUps\StandingNation.aspx" />
+    <Content Include="PopUps\Gender.aspx" />
+    <Content Include="PopUps\DistancePerformance.aspx" />
+    <Content Include="PopUps\DistancePerformanceOld.aspx" />
+    <Content Include="PopUps\CurrentMission.aspx" />
+    <Content Include="PopUps\CurrentStatus.aspx" />
+    <Content Include="PopUps\ExpectedClass.aspx" />
+    <Content Include="PopUps\ExpectedDistance.aspx" />
+    <Content Include="PopUps\FavourableClassGroup.aspx" />
+    <Content Include="PopUps\FavourableDistanceGroup.aspx" />
+    <Content Include="PopUps\HomeClass.aspx" />
+    <Content Include="PopUps\HomeDistance.aspx" />
+    <Content Include="PopUps\HorseBan.aspx" />
+    <Content Include="PopUps\HorseName.aspx" />
+    <Content Include="PopUps\HorseProfile.aspx" />
+    <Content Include="PopUps\HorseRename.aspx" />
+    <Content Include="PopUps\MyHomeClass.aspx" />
+    <Content Include="PopUps\MyHomeDistance.aspx" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Reports\RaceAllReportDetails.aspx" />
+    <Content Include="Reports\RaceGuide.aspx" />
+    <Content Include="Reports\RaceCardReport.aspx" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.9.js" />
+    <Content Include="Scripts\jquery1.7.2.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Styles.aspx" />
+    <Content Include="Styles\jquery-ui-1.8.9.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\Acceptance.aspx.cs">
+      <DependentUpon>Acceptance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\Acceptance.aspx.designer.cs">
+      <DependentUpon>Acceptance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\CardResult.aspx.cs">
+      <DependentUpon>CardResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\CardResult.aspx.designer.cs">
+      <DependentUpon>CardResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\CardWorkout.aspx.cs">
+      <DependentUpon>CardWorkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\CardWorkout.aspx.designer.cs">
+      <DependentUpon>CardWorkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\CardSwimming.aspx.cs">
+      <DependentUpon>CardSwimming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\CardSwimming.aspx.designer.cs">
+      <DependentUpon>CardSwimming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\CardVeterinary.aspx.cs">
+      <DependentUpon>CardVeterinary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\CardVeterinary.aspx.designer.cs">
+      <DependentUpon>CardVeterinary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\CardOdds.aspx.cs">
+      <DependentUpon>CardOdds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\CardOdds.aspx.designer.cs">
+      <DependentUpon>CardOdds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\CardTreadmill.aspx.cs">
+      <DependentUpon>CardTreadmill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\CardTreadmill.aspx.designer.cs">
+      <DependentUpon>CardTreadmill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\CardTip.aspx.cs">
+      <DependentUpon>CardTip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\CardTip.aspx.designer.cs">
+      <DependentUpon>CardTip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\CardSelection.aspx.cs">
+      <DependentUpon>CardSelection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\CardSelection.aspx.designer.cs">
+      <DependentUpon>CardSelection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\CardGatePractiseEntry.aspx.cs">
+      <DependentUpon>CardGatePractiseEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\CardGatePractiseEntry.aspx.designer.cs">
+      <DependentUpon>CardGatePractiseEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\CardTrack.aspx.cs">
+      <DependentUpon>CardTrack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\CardTrack.aspx.designer.cs">
+      <DependentUpon>CardTrack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\MockRaceEntry.aspx.cs">
+      <DependentUpon>MockRaceEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\MockRaceEntry.aspx.designer.cs">
+      <DependentUpon>MockRaceEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\Hotline.aspx.cs">
+      <DependentUpon>Hotline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\Hotline.aspx.designer.cs">
+      <DependentUpon>Hotline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\RaceDaySituation.aspx.cs">
+      <DependentUpon>RaceDaySituation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\RaceDaySituation.aspx.designer.cs">
+      <DependentUpon>RaceDaySituation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\RaceReview.aspx.cs">
+      <DependentUpon>RaceReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\RaceReview.aspx.designer.cs">
+      <DependentUpon>RaceReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\RaceDayIncident.aspx.cs">
+      <DependentUpon>RaceDayIncident.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\RaceDayIncident.aspx.designer.cs">
+      <DependentUpon>RaceDayIncident.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\RaceDayReport.aspx.cs">
+      <DependentUpon>RaceDayReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\RaceDayReport.aspx.designer.cs">
+      <DependentUpon>RaceDayReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\ResultLapTiming.aspx.cs">
+      <DependentUpon>ResultLapTiming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\ResultLapTiming.aspx.designer.cs">
+      <DependentUpon>ResultLapTiming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\ResultSectionalTiming.aspx.cs">
+      <DependentUpon>ResultSectionalTiming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\ResultSectionalTiming.aspx.designer.cs">
+      <DependentUpon>ResultSectionalTiming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\ResultRaceCommentary.aspx.cs">
+      <DependentUpon>ResultRaceCommentary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\ResultRaceCommentary.aspx.designer.cs">
+      <DependentUpon>ResultRaceCommentary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\RevisedHandicapRating.aspx.cs">
+      <DependentUpon>RevisedHandicapRating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\RevisedHandicapRating.aspx.designer.cs">
+      <DependentUpon>RevisedHandicapRating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\RaceCard.aspx.cs">
+      <DependentUpon>RaceCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\RaceCard.aspx.designer.cs">
+      <DependentUpon>RaceCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\ProspectusDivision.aspx.cs">
+      <DependentUpon>ProspectusDivision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\ProspectusDivision.aspx.designer.cs">
+      <DependentUpon>ProspectusDivision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\Entry.aspx.cs">
+      <DependentUpon>Entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\Entry.aspx.designer.cs">
+      <DependentUpon>Entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\Declaration.aspx.cs">
+      <DependentUpon>Declaration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\Declaration.aspx.designer.cs">
+      <DependentUpon>Declaration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\Handicap.aspx.cs">
+      <DependentUpon>Handicap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\Handicap.aspx.designer.cs">
+      <DependentUpon>Handicap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\EntryFast.aspx.cs">
+      <DependentUpon>EntryFast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\EntryFast.aspx.designer.cs">
+      <DependentUpon>EntryFast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonMethods.cs" />
+    <Compile Include="Common\ErrorHandling.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddProfessional.aspx.cs">
+      <DependentUpon>AddProfessional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddProfessional.aspx.designer.cs">
+      <DependentUpon>AddProfessional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddAgeCondition.aspx.cs">
+      <DependentUpon>AddAgeCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddAgeCondition.aspx.designer.cs">
+      <DependentUpon>AddAgeCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddProspectus.aspx.cs">
+      <DependentUpon>AddProspectus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddProspectus.aspx.designer.cs">
+      <DependentUpon>AddProspectus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterYearCenterWise.aspx.cs">
+      <DependentUpon>MasterYearCenterWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterYearCenterWise.aspx.designer.cs">
+      <DependentUpon>MasterYearCenterWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterHandicapWeightPenaltyCriteria.aspx.cs">
+      <DependentUpon>MasterHandicapWeightPenaltyCriteria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterHandicapWeightPenaltyCriteria.aspx.designer.cs">
+      <DependentUpon>MasterHandicapWeightPenaltyCriteria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterHandicapWeightPenaltyCondition.aspx.cs">
+      <DependentUpon>MasterHandicapWeightPenaltyCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterHandicapWeightPenaltyCondition.aspx.designer.cs">
+      <DependentUpon>MasterHandicapWeightPenaltyCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterCurrentForm.aspx.cs">
+      <DependentUpon>MasterCurrentForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterCurrentForm.aspx.designer.cs">
+      <DependentUpon>MasterCurrentForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterProfessionalBackground.aspx.cs">
+      <DependentUpon>MasterProfessionalBackground.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterProfessionalBackground.aspx.designer.cs">
+      <DependentUpon>MasterProfessionalBackground.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterReligion.aspx.cs">
+      <DependentUpon>MasterReligion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterReligion.aspx.designer.cs">
+      <DependentUpon>MasterReligion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterHandicapRatingRange.aspx.cs">
+      <DependentUpon>MasterHandicapRatingRange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterHandicapRatingRange.aspx.designer.cs">
+      <DependentUpon>MasterHandicapRatingRange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterRaceCardCondition.aspx.cs">
+      <DependentUpon>MasterRaceCardCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterRaceCardCondition.aspx.designer.cs">
+      <DependentUpon>MasterRaceCardCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterBunchCondition.aspx.cs">
+      <DependentUpon>MasterBunchCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterBunchCondition.aspx.designer.cs">
+      <DependentUpon>MasterBunchCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ProspectusGeneralSeasonalCondition.aspx.cs">
+      <DependentUpon>ProspectusGeneralSeasonalCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ProspectusGeneralSeasonalCondition.aspx.designer.cs">
+      <DependentUpon>ProspectusGeneralSeasonalCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ProspectusMasterPermanentCondition.aspx.cs">
+      <DependentUpon>ProspectusMasterPermanentCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ProspectusMasterPermanentCondition.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterPermanentCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterDisease.aspx.cs">
+      <DependentUpon>MasterDisease.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterDisease.aspx.designer.cs">
+      <DependentUpon>MasterDisease.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\VerdictMargin.aspx.cs">
+      <DependentUpon>VerdictMargin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\VerdictMargin.aspx.designer.cs">
+      <DependentUpon>VerdictMargin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ProspectusGeneral.aspx.cs">
+      <DependentUpon>ProspectusGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ProspectusGeneral.aspx.designer.cs">
+      <DependentUpon>ProspectusGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\CommonExport.aspx.cs">
+      <DependentUpon>CommonExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\CommonExport.aspx.designer.cs">
+      <DependentUpon>CommonExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AddHorseOwnerStud.aspx.cs">
+      <DependentUpon>AddHorseOwnerStud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\AddHorseOwnerStud.aspx.designer.cs">
+      <DependentUpon>AddHorseOwnerStud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\ResultToteDivident.aspx.cs">
+      <DependentUpon>ResultToteDivident.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\ResultToteDivident.aspx.designer.cs">
+      <DependentUpon>ResultToteDivident.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseTreadmill.aspx.cs">
+      <DependentUpon>HorseTreadmill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseTreadmill.aspx.designer.cs">
+      <DependentUpon>HorseTreadmill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseSwimming.aspx.cs">
+      <DependentUpon>HorseSwimming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseSwimming.aspx.designer.cs">
+      <DependentUpon>HorseSwimming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalPenalty.aspx.cs">
+      <DependentUpon>ProfessionalPenalty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalPenalty.aspx.designer.cs">
+      <DependentUpon>ProfessionalPenalty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalJockeyAllowanceStage.aspx.cs">
+      <DependentUpon>ProfessionalJockeyAllowanceStage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalJockeyAllowanceStage.aspx.designer.cs">
+      <DependentUpon>ProfessionalJockeyAllowanceStage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterBunch.aspx.cs">
+      <DependentUpon>ProspectusMasterBunch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterBunch.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterBunch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterRaceAbbriviation.aspx.cs">
+      <DependentUpon>ProspectusMasterRaceAbbriviation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterRaceAbbriviation.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterRaceAbbriviation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterStakeMoneyAddition.aspx.cs">
+      <DependentUpon>ProspectusMasterStakeMoneyAddition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterStakeMoneyAddition.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterStakeMoneyAddition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterOtherCondition.aspx.cs">
+      <DependentUpon>ProspectusMasterOtherCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterOtherCondition.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterOtherCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterRaceHistory.aspx.cs">
+      <DependentUpon>ProspectusMasterRaceHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterRaceHistory.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterRaceHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterHandicapWeightAsPerAge.aspx.cs">
+      <DependentUpon>ProspectusMasterHandicapWeightAsPerAge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterHandicapWeightAsPerAge.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterHandicapWeightAsPerAge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HandicapBan.aspx.cs">
+      <DependentUpon>HandicapBan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HandicapBan.aspx.designer.cs">
+      <DependentUpon>HandicapBan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterHandicapWeight.aspx.cs">
+      <DependentUpon>ProspectusMasterHandicapWeight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterHandicapWeight.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterHandicapWeight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusGeneralRaceCardCondition.aspx.cs">
+      <DependentUpon>ProspectusGeneralRaceCardCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusGeneralRaceCardCondition.aspx.designer.cs">
+      <DependentUpon>ProspectusGeneralRaceCardCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusGeneralSeasonalCondition.aspx.cs">
+      <DependentUpon>ProspectusGeneralSeasonalCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusGeneralSeasonalCondition.aspx.designer.cs">
+      <DependentUpon>ProspectusGeneralSeasonalCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterBunchCondition.aspx.cs">
+      <DependentUpon>ProspectusMasterBunchCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterBunchCondition.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterBunchCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterHWPCondition.aspx.cs">
+      <DependentUpon>ProspectusMasterHWPCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterHWPCondition.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterHWPCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterInterestedProfessionalBackground.aspx.cs">
+      <DependentUpon>ProspectusMasterInterestedProfessionalBackground.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterInterestedProfessionalBackground.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterInterestedProfessionalBackground.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalBackground.aspx.cs">
+      <DependentUpon>ProfessionalBackground.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalBackground.aspx.designer.cs">
+      <DependentUpon>ProfessionalBackground.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalAntiPerson.aspx.cs">
+      <DependentUpon>ProfessionalAntiPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalAntiPerson.aspx.designer.cs">
+      <DependentUpon>ProfessionalAntiPerson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalReligion.aspx.cs">
+      <DependentUpon>ProfessionalReligion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalReligion.aspx.designer.cs">
+      <DependentUpon>ProfessionalReligion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseCurrentForm.aspx.cs">
+      <DependentUpon>HorseCurrentForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseCurrentForm.aspx.designer.cs">
+      <DependentUpon>HorseCurrentForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterPermanentCondition.aspx.cs">
+      <DependentUpon>ProspectusMasterPermanentCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterPermanentCondition.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterPermanentCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusGeneralDates.aspx.cs">
+      <DependentUpon>ProspectusGeneralDates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusGeneralDates.aspx.designer.cs">
+      <DependentUpon>ProspectusGeneralDates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusGeneralObservation.aspx.cs">
+      <DependentUpon>ProspectusGeneralObservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusGeneralObservation.aspx.designer.cs">
+      <DependentUpon>ProspectusGeneralObservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterMomenttoCost.aspx.cs">
+      <DependentUpon>ProspectusMasterMomenttoCost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterMomenttoCost.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterMomenttoCost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterMomenttoType.aspx.cs">
+      <DependentUpon>ProspectusMasterMomenttoType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterMomenttoType.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterMomenttoType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusGeneralRaceNewName.aspx.cs">
+      <DependentUpon>ProspectusGeneralRaceNewName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusGeneralRaceNewName.aspx.designer.cs">
+      <DependentUpon>ProspectusGeneralRaceNewName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusGeneralRaceName.aspx.cs">
+      <DependentUpon>ProspectusGeneralRaceName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusGeneralRaceName.aspx.designer.cs">
+      <DependentUpon>ProspectusGeneralRaceName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterGradedNo.aspx.cs">
+      <DependentUpon>ProspectusMasterGradedNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterGradedNo.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterGradedNo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterGraded.aspx.cs">
+      <DependentUpon>ProspectusMasterGraded.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterGraded.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterGraded.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterClassic.aspx.cs">
+      <DependentUpon>ProspectusMasterClassic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterClassic.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterClassic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterSweepStake.aspx.cs">
+      <DependentUpon>ProspectusMasterSweepStake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterSweepStake.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterSweepStake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterMillion.aspx.cs">
+      <DependentUpon>ProspectusMasterMillion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterMillion.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterMillion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterRaceStatus.aspx.cs">
+      <DependentUpon>ProspectusMasterRaceStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterRaceStatus.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterRaceStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterAgeCondition.aspx.cs">
+      <DependentUpon>ProspectusMasterAgeCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterAgeCondition.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterAgeCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterEligbleHandRatingRange.aspx.cs">
+      <DependentUpon>ProspectusMasterEligbleHandRatingRange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterEligbleHandRatingRange.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterEligbleHandRatingRange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterHanRatingRange.aspx.cs">
+      <DependentUpon>ProspectusMasterHanRatingRange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterHanRatingRange.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterHanRatingRange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterRaceType.aspx.cs">
+      <DependentUpon>ProspectusMasterRaceType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterRaceType.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterRaceType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasDistance.aspx.cs">
+      <DependentUpon>ProspectusMasDistance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasDistance.aspx.designer.cs">
+      <DependentUpon>ProspectusMasDistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMomenttoPresenter.aspx.cs">
+      <DependentUpon>ProspectusMomenttoPresenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMomenttoPresenter.aspx.designer.cs">
+      <DependentUpon>ProspectusMomenttoPresenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusSponcer.aspx.cs">
+      <DependentUpon>ProspectusSponcer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusSponcer.aspx.designer.cs">
+      <DependentUpon>ProspectusSponcer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusRaceMemoryOf.aspx.cs">
+      <DependentUpon>ProspectusRaceMemoryOf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusRaceMemoryOf.aspx.designer.cs">
+      <DependentUpon>ProspectusRaceMemoryOf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterRaceNewName.aspx.cs">
+      <DependentUpon>ProspectusMasterRaceNewName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterRaceNewName.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterRaceNewName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterRaceName.aspx.cs">
+      <DependentUpon>ProspectusMasterRaceName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProspectusMasterRaceName.aspx.designer.cs">
+      <DependentUpon>ProspectusMasterRaceName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalRelation.aspx.cs">
+      <DependentUpon>ProfessionalRelation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalRelation.aspx.designer.cs">
+      <DependentUpon>ProfessionalRelation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalMyObservation.aspx.cs">
+      <DependentUpon>ProfessionalMyObservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalMyObservation.aspx.designer.cs">
+      <DependentUpon>ProfessionalMyObservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalImportantDates.aspx.cs">
+      <DependentUpon>ProfessionalImportantDates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalImportantDates.aspx.designer.cs">
+      <DependentUpon>ProfessionalImportantDates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalHabit.aspx.cs">
+      <DependentUpon>ProfessionalHabit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalHabit.aspx.designer.cs">
+      <DependentUpon>ProfessionalHabit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalFavHomeClass.aspx.cs">
+      <DependentUpon>ProfessionalFavHomeClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalFavHomeClass.aspx.designer.cs">
+      <DependentUpon>ProfessionalFavHomeClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalHomeClass.aspx.cs">
+      <DependentUpon>ProfessionalHomeClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalHomeClass.aspx.designer.cs">
+      <DependentUpon>ProfessionalHomeClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalFavDistanceGroup.aspx.cs">
+      <DependentUpon>ProfessionalFavDistanceGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalFavDistanceGroup.aspx.designer.cs">
+      <DependentUpon>ProfessionalFavDistanceGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalHomeDistance.aspx.cs">
+      <DependentUpon>ProfessionalHomeDistance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalHomeDistance.aspx.designer.cs">
+      <DependentUpon>ProfessionalHomeDistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalPartners.aspx.cs">
+      <DependentUpon>ProfessionalPartners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalPartners.aspx.designer.cs">
+      <DependentUpon>ProfessionalPartners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalTrainerAssistant.aspx.cs">
+      <DependentUpon>ProfessionalTrainerAssistant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalTrainerAssistant.aspx.designer.cs">
+      <DependentUpon>ProfessionalTrainerAssistant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalJockeyAprenticeOf.aspx.cs">
+      <DependentUpon>ProfessionalJockeyAprenticeOf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalJockeyAprenticeOf.aspx.designer.cs">
+      <DependentUpon>ProfessionalJockeyAprenticeOf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalOtherName.aspx.cs">
+      <DependentUpon>ProfessionalOtherName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalOtherName.aspx.designer.cs">
+      <DependentUpon>ProfessionalOtherName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalJockeyWeight.aspx.cs">
+      <DependentUpon>ProfessionalJockeyWeight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalJockeyWeight.aspx.designer.cs">
+      <DependentUpon>ProfessionalJockeyWeight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalCurrentStatus.aspx.cs">
+      <DependentUpon>ProfessionalCurrentStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalCurrentStatus.aspx.designer.cs">
+      <DependentUpon>ProfessionalCurrentStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalStatus.aspx.cs">
+      <DependentUpon>ProfessionalStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalStatus.aspx.designer.cs">
+      <DependentUpon>ProfessionalStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalOwnerColor.aspx.cs">
+      <DependentUpon>ProfessionalOwnerColor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalOwnerColor.aspx.designer.cs">
+      <DependentUpon>ProfessionalOwnerColor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalProfile.aspx.cs">
+      <DependentUpon>ProfessionalProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalProfile.aspx.designer.cs">
+      <DependentUpon>ProfessionalProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalBaseCenter.aspx.cs">
+      <DependentUpon>ProfessionalBaseCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalBaseCenter.aspx.designer.cs">
+      <DependentUpon>ProfessionalBaseCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalNewName.aspx.cs">
+      <DependentUpon>ProfessionalNewName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalNewName.aspx.designer.cs">
+      <DependentUpon>ProfessionalNewName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalName.aspx.cs">
+      <DependentUpon>ProfessionalName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ProfessionalName.aspx.designer.cs">
+      <DependentUpon>ProfessionalName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseBandage.aspx.cs">
+      <DependentUpon>HorseBandage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseBandage.aspx.designer.cs">
+      <DependentUpon>HorseBandage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseMyObservations.aspx.cs">
+      <DependentUpon>HorseMyObservations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseMyObservations.aspx.designer.cs">
+      <DependentUpon>HorseMyObservations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseVeterinaryProblem.aspx.cs">
+      <DependentUpon>HorseVeterinaryProblem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseVeterinaryProblem.aspx.designer.cs">
+      <DependentUpon>HorseVeterinaryProblem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseHabit.aspx.cs">
+      <DependentUpon>HorseHabit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseHabit.aspx.designer.cs">
+      <DependentUpon>HorseHabit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseRunningStyle.aspx.cs">
+      <DependentUpon>HorseRunningStyle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseRunningStyle.aspx.designer.cs">
+      <DependentUpon>HorseRunningStyle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseLikingEnviornment.aspx.cs">
+      <DependentUpon>HorseLikingEnviornment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseLikingEnviornment.aspx.designer.cs">
+      <DependentUpon>HorseLikingEnviornment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseSaddleNo.aspx.cs">
+      <DependentUpon>HorseSaddleNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseSaddleNo.aspx.designer.cs">
+      <DependentUpon>HorseSaddleNo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseShoeDescription.aspx.cs">
+      <DependentUpon>HorseShoeDescription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseShoeDescription.aspx.designer.cs">
+      <DependentUpon>HorseShoeDescription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\DirectGate.aspx.cs">
+      <DependentUpon>DirectGate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\DirectGate.aspx.designer.cs">
+      <DependentUpon>DirectGate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseTrackStar.aspx.cs">
+      <DependentUpon>HorseTrackStar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseTrackStar.aspx.designer.cs">
+      <DependentUpon>HorseTrackStar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseBit.aspx.cs">
+      <DependentUpon>HorseBit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseBit.aspx.designer.cs">
+      <DependentUpon>HorseBit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseEquipment.aspx.cs">
+      <DependentUpon>HorseEquipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseEquipment.aspx.designer.cs">
+      <DependentUpon>HorseEquipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseShoe.aspx.cs">
+      <DependentUpon>HorseShoe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseShoe.aspx.designer.cs">
+      <DependentUpon>HorseShoe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddBit.aspx.cs">
+      <DependentUpon>AddBit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddBit.aspx.designer.cs">
+      <DependentUpon>AddBit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddCenter.aspx.cs">
+      <DependentUpon>AddCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddCenter.aspx.designer.cs">
+      <DependentUpon>AddCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddClass.aspx.cs">
+      <DependentUpon>AddClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddClass.aspx.designer.cs">
+      <DependentUpon>AddClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddClassGroup.aspx.cs">
+      <DependentUpon>AddClassGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddClassGroup.aspx.designer.cs">
+      <DependentUpon>AddClassGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddDiscardRules.aspx.cs">
+      <DependentUpon>AddDiscardRules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddDiscardRules.aspx.designer.cs">
+      <DependentUpon>AddDiscardRules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddDistance.aspx.cs">
+      <DependentUpon>AddDistance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddDistance.aspx.designer.cs">
+      <DependentUpon>AddDistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddDistanceGroup.aspx.cs">
+      <DependentUpon>AddDistanceGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddDistanceGroup.aspx.designer.cs">
+      <DependentUpon>AddDistanceGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddEquipment.aspx.cs">
+      <DependentUpon>AddEquipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddEquipment.aspx.designer.cs">
+      <DependentUpon>AddEquipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddHabit.aspx.cs">
+      <DependentUpon>AddHabit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddHabit.aspx.designer.cs">
+      <DependentUpon>AddHabit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddHorse.aspx.cs">
+      <DependentUpon>AddHorse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddHorse.aspx.designer.cs">
+      <DependentUpon>AddHorse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddHorseRetirementAge.aspx.cs">
+      <DependentUpon>AddHorseRetirementAge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddHorseRetirementAge.aspx.designer.cs">
+      <DependentUpon>AddHorseRetirementAge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddHotliner.aspx.cs">
+      <DependentUpon>AddHotliner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddHotliner.aspx.designer.cs">
+      <DependentUpon>AddHotliner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddIncident.aspx.cs">
+      <DependentUpon>AddIncident.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddIncident.aspx.designer.cs">
+      <DependentUpon>AddIncident.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddMasterAllowance.aspx.cs">
+      <DependentUpon>AddMasterAllowance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddMasterAllowance.aspx.designer.cs">
+      <DependentUpon>AddMasterAllowance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddMasterHorseSex.aspx.cs">
+      <DependentUpon>AddMasterHorseSex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddMasterHorseSex.aspx.designer.cs">
+      <DependentUpon>AddMasterHorseSex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddNation.aspx.cs">
+      <DependentUpon>AddNation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddNation.aspx.designer.cs">
+      <DependentUpon>AddNation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddNBCondition.aspx.cs">
+      <DependentUpon>AddNBCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddNBCondition.aspx.designer.cs">
+      <DependentUpon>AddNBCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddOwnerColor.aspx.cs">
+      <DependentUpon>AddOwnerColor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddOwnerColor.aspx.designer.cs">
+      <DependentUpon>AddOwnerColor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddRaceTimings.aspx.cs">
+      <DependentUpon>AddRaceTimings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddRaceTimings.aspx.designer.cs">
+      <DependentUpon>AddRaceTimings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddRatingMarkFormatStyle.aspx.cs">
+      <DependentUpon>AddRatingMarkFormatStyle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddRatingMarkFormatStyle.aspx.designer.cs">
+      <DependentUpon>AddRatingMarkFormatStyle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddScaleOfWeight.aspx.cs">
+      <DependentUpon>AddScaleOfWeight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddScaleOfWeight.aspx.designer.cs">
+      <DependentUpon>AddScaleOfWeight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddSeason.aspx.cs">
+      <DependentUpon>AddSeason.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddSeason.aspx.designer.cs">
+      <DependentUpon>AddSeason.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddSeasonDescription.aspx.cs">
+      <DependentUpon>AddSeasonDescription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddSeasonDescription.aspx.designer.cs">
+      <DependentUpon>AddSeasonDescription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddSelector.aspx.cs">
+      <DependentUpon>AddSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddSelector.aspx.designer.cs">
+      <DependentUpon>AddSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddShoe.aspx.cs">
+      <DependentUpon>AddShoe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddShoe.aspx.designer.cs">
+      <DependentUpon>AddShoe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddStakeMoney.aspx.cs">
+      <DependentUpon>AddStakeMoney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddStakeMoney.aspx.designer.cs">
+      <DependentUpon>AddStakeMoney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddTipster.aspx.cs">
+      <DependentUpon>AddTipster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddTipster.aspx.designer.cs">
+      <DependentUpon>AddTipster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AddYear.aspx.cs">
+      <DependentUpon>AddYear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AddYear.aspx.designer.cs">
+      <DependentUpon>AddYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterHorseColor.aspx.cs">
+      <DependentUpon>MasterHorseColor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterHorseColor.aspx.designer.cs">
+      <DependentUpon>MasterHorseColor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AddHorseStatus.aspx.cs">
+      <DependentUpon>AddHorseStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\AddHorseStatus.aspx.designer.cs">
+      <DependentUpon>AddHorseStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ClassPerformance.aspx.cs">
+      <DependentUpon>ClassPerformance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ClassPerformance.aspx.designer.cs">
+      <DependentUpon>ClassPerformance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ClassPerformanceOld.aspx.cs">
+      <DependentUpon>ClassPerformanceOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ClassPerformanceOld.aspx.designer.cs">
+      <DependentUpon>ClassPerformanceOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\BodyWeight.aspx.cs">
+      <DependentUpon>BodyWeight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\BodyWeight.aspx.designer.cs">
+      <DependentUpon>BodyWeight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\MyHandicapRating.aspx.cs">
+      <DependentUpon>MyHandicapRating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\MyHandicapRating.aspx.designer.cs">
+      <DependentUpon>MyHandicapRating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HandicapRating.aspx.cs">
+      <DependentUpon>HandicapRating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HandicapRating.aspx.designer.cs">
+      <DependentUpon>HandicapRating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\TargetRace.aspx.cs">
+      <DependentUpon>TargetRace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\TargetRace.aspx.designer.cs">
+      <DependentUpon>TargetRace.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\TrainerActual.aspx.cs">
+      <DependentUpon>TrainerActual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\TrainerActual.aspx.designer.cs">
+      <DependentUpon>TrainerActual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\TrainerRecord.aspx.cs">
+      <DependentUpon>TrainerRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\TrainerRecord.aspx.designer.cs">
+      <DependentUpon>TrainerRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\OwnerActual.aspx.cs">
+      <DependentUpon>OwnerActual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\OwnerActual.aspx.designer.cs">
+      <DependentUpon>OwnerActual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\OwnerRecord.aspx.cs">
+      <DependentUpon>OwnerRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\OwnerRecord.aspx.designer.cs">
+      <DependentUpon>OwnerRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseRunningCenter.aspx.cs">
+      <DependentUpon>HorseRunningCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseRunningCenter.aspx.designer.cs">
+      <DependentUpon>HorseRunningCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseBaseCenter.aspx.cs">
+      <DependentUpon>HorseBaseCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseBaseCenter.aspx.designer.cs">
+      <DependentUpon>HorseBaseCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\StandingNation.aspx.cs">
+      <DependentUpon>StandingNation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\StandingNation.aspx.designer.cs">
+      <DependentUpon>StandingNation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\Gender.aspx.cs">
+      <DependentUpon>Gender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\Gender.aspx.designer.cs">
+      <DependentUpon>Gender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\DistancePerformance.aspx.cs">
+      <DependentUpon>DistancePerformance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\DistancePerformance.aspx.designer.cs">
+      <DependentUpon>DistancePerformance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\DistancePerformanceOld.aspx.cs">
+      <DependentUpon>DistancePerformanceOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\DistancePerformanceOld.aspx.designer.cs">
+      <DependentUpon>DistancePerformanceOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\CurrentMission.aspx.cs">
+      <DependentUpon>CurrentMission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\CurrentMission.aspx.designer.cs">
+      <DependentUpon>CurrentMission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\CurrentStatus.aspx.cs">
+      <DependentUpon>CurrentStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\CurrentStatus.aspx.designer.cs">
+      <DependentUpon>CurrentStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ExpectedClass.aspx.cs">
+      <DependentUpon>ExpectedClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ExpectedClass.aspx.designer.cs">
+      <DependentUpon>ExpectedClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ExpectedDistance.aspx.cs">
+      <DependentUpon>ExpectedDistance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\ExpectedDistance.aspx.designer.cs">
+      <DependentUpon>ExpectedDistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\FavourableClassGroup.aspx.cs">
+      <DependentUpon>FavourableClassGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\FavourableClassGroup.aspx.designer.cs">
+      <DependentUpon>FavourableClassGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\FavourableDistanceGroup.aspx.cs">
+      <DependentUpon>FavourableDistanceGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\FavourableDistanceGroup.aspx.designer.cs">
+      <DependentUpon>FavourableDistanceGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HomeClass.aspx.cs">
+      <DependentUpon>HomeClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HomeClass.aspx.designer.cs">
+      <DependentUpon>HomeClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HomeDistance.aspx.cs">
+      <DependentUpon>HomeDistance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HomeDistance.aspx.designer.cs">
+      <DependentUpon>HomeDistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseBan.aspx.cs">
+      <DependentUpon>HorseBan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseBan.aspx.designer.cs">
+      <DependentUpon>HorseBan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseName.aspx.cs">
+      <DependentUpon>HorseName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseName.aspx.designer.cs">
+      <DependentUpon>HorseName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseProfile.aspx.cs">
+      <DependentUpon>HorseProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseProfile.aspx.designer.cs">
+      <DependentUpon>HorseProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\HorseRename.aspx.cs">
+      <DependentUpon>HorseRename.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\HorseRename.aspx.designer.cs">
+      <DependentUpon>HorseRename.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\MyHomeClass.aspx.cs">
+      <DependentUpon>MyHomeClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\MyHomeClass.aspx.designer.cs">
+      <DependentUpon>MyHomeClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\MyHomeDistance.aspx.cs">
+      <DependentUpon>MyHomeDistance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\MyHomeDistance.aspx.designer.cs">
+      <DependentUpon>MyHomeDistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\RaceAllReportDetails.aspx.cs">
+      <DependentUpon>RaceAllReportDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RaceAllReportDetails.aspx.designer.cs">
+      <DependentUpon>RaceAllReportDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RaceGuide.aspx.cs">
+      <DependentUpon>RaceGuide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RaceGuide.aspx.designer.cs">
+      <DependentUpon>RaceGuide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RaceCardReport.aspx.cs">
+      <DependentUpon>RaceCardReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RaceCardReport.aspx.designer.cs">
+      <DependentUpon>RaceCardReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Styles.aspx.cs">
+      <DependentUpon>Styles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Styles.aspx.designer.cs">
+      <DependentUpon>Styles.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6908</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49632/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!--<Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.7\StyleCop.targets" />-->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

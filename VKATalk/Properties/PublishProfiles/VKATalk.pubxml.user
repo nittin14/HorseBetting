@@ -1,0 +1,1227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\VKATalkPublish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>02/20/2017 18:33:37</publishTime>
+    </File>
+    <File Include="Account/Manage.aspx">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Account/OpenAuthProviders.ascx">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Account/RegisterExternalLogin.aspx">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="App_Code/Global.asax">
+      <publishTime>12/13/2019 12:39:28</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>02/20/2017 20:52:07</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>02/20/2017 18:35:28</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.UI.Combined.dll">
+      <publishTime>02/20/2017 18:35:29</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.AspNet.dll">
+      <publishTime>02/20/2017 18:35:38</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.Core.dll">
+      <publishTime>02/20/2017 18:35:34</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.Consumer.dll">
+      <publishTime>02/20/2017 18:35:35</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.dll">
+      <publishTime>02/20/2017 18:35:35</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.dll">
+      <publishTime>02/20/2017 18:35:36</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.RelyingParty.dll">
+      <publishTime>02/20/2017 18:35:37</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/20/2017 18:35:40</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>02/20/2017 20:55:39</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>05/15/2017 10:39:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Membership.OpenAuth.dll">
+      <publishTime>02/20/2017 18:35:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>02/20/2017 18:35:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>02/20/2017 18:35:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>02/20/2017 18:35:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/20/2017 18:35:33</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/25/2013 15:40:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>02/20/2017 18:35:26</publishTime>
+    </File>
+    <File Include="bin/VKATalk.dll">
+      <publishTime>01/25/2021 18:07:01</publishTime>
+    </File>
+    <File Include="bin/VKATalk.pdb">
+      <publishTime>01/25/2021 18:07:01</publishTime>
+    </File>
+    <File Include="bin/VKATalkBusinessLayer.dll">
+      <publishTime>01/17/2021 20:48:54</publishTime>
+    </File>
+    <File Include="bin/VKATalkBusinessLayer.pdb">
+      <publishTime>01/17/2021 20:48:54</publishTime>
+    </File>
+    <File Include="bin/VKATalkClassLayer.dll">
+      <publishTime>01/17/2021 20:48:53</publishTime>
+    </File>
+    <File Include="bin/VKATalkClassLayer.pdb">
+      <publishTime>01/17/2021 20:48:53</publishTime>
+    </File>
+    <File Include="bin/VKATalkDb.dll">
+      <publishTime>01/17/2021 20:48:54</publishTime>
+    </File>
+    <File Include="bin/VKATalkDb.pdb">
+      <publishTime>01/17/2021 20:48:54</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/17/2013 17:03:52</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Card/Acceptance.aspx">
+      <publishTime>12/09/2020 14:05:32</publishTime>
+    </File>
+    <File Include="Card/Acceptance1.aspx">
+      <publishTime>10/29/2017 17:25:40</publishTime>
+    </File>
+    <File Include="Card/AddCheckSheet.aspx">
+      <publishTime>01/22/2017 19:35:47</publishTime>
+    </File>
+    <File Include="Card/AddDailyWorks.aspx">
+      <publishTime>01/22/2017 19:35:47</publishTime>
+    </File>
+    <File Include="Card/AddDaily_Prospectus.aspx">
+      <publishTime>01/22/2017 19:35:47</publishTime>
+    </File>
+    <File Include="Card/AddEntry.aspx">
+      <publishTime>01/22/2017 19:35:48</publishTime>
+    </File>
+    <File Include="Card/AddEntryType.aspx">
+      <publishTime>01/22/2017 19:35:48</publishTime>
+    </File>
+    <File Include="Card/CardGatePractiseEntry.aspx">
+      <publishTime>08/31/2018 11:32:49</publishTime>
+    </File>
+    <File Include="Card/CardMockRace.aspx">
+      <publishTime>01/24/2018 12:17:37</publishTime>
+    </File>
+    <File Include="Card/CardOdds.aspx">
+      <publishTime>10/09/2019 10:48:19</publishTime>
+    </File>
+    <File Include="Card/CardResult.aspx">
+      <publishTime>01/07/2021 14:11:56</publishTime>
+    </File>
+    <File Include="Card/CardSelection.aspx">
+      <publishTime>01/13/2018 23:08:42</publishTime>
+    </File>
+    <File Include="Card/CardSwimming.aspx">
+      <publishTime>10/09/2019 10:48:19</publishTime>
+    </File>
+    <File Include="Card/CardTip.aspx">
+      <publishTime>02/26/2019 11:23:21</publishTime>
+    </File>
+    <File Include="Card/CardTrack.aspx">
+      <publishTime>12/21/2020 19:52:13</publishTime>
+    </File>
+    <File Include="Card/CardTreadmill.aspx">
+      <publishTime>10/09/2019 10:48:19</publishTime>
+    </File>
+    <File Include="Card/CardVeterinary.aspx">
+      <publishTime>10/09/2019 10:48:19</publishTime>
+    </File>
+    <File Include="Card/CardWorkout.aspx">
+      <publishTime>05/12/2019 22:03:34</publishTime>
+    </File>
+    <File Include="Card/Declaration.aspx">
+      <publishTime>12/15/2020 12:21:53</publishTime>
+    </File>
+    <File Include="Card/Entry.aspx">
+      <publishTime>03/28/2020 23:10:16</publishTime>
+    </File>
+    <File Include="Card/Entry1.aspx">
+      <publishTime>10/14/2017 14:07:04</publishTime>
+    </File>
+    <File Include="Card/EntryFast.aspx">
+      <publishTime>11/09/2019 17:31:10</publishTime>
+    </File>
+    <File Include="Card/EntryFuture.aspx">
+      <publishTime>09/20/2017 08:49:56</publishTime>
+    </File>
+    <File Include="Card/EntryFuture1.aspx">
+      <publishTime>10/14/2017 23:20:54</publishTime>
+    </File>
+    <File Include="Card/Handicap.aspx">
+      <publishTime>11/04/2020 19:19:40</publishTime>
+    </File>
+    <File Include="Card/Hotline.aspx">
+      <publishTime>01/12/2018 12:51:22</publishTime>
+    </File>
+    <File Include="Card/MockRaceEntry.aspx">
+      <publishTime>01/24/2018 11:52:16</publishTime>
+    </File>
+    <File Include="Card/ProspectusDivision.aspx">
+      <publishTime>12/17/2020 11:07:16</publishTime>
+    </File>
+    <File Include="Card/RaceCard.aspx">
+      <publishTime>04/03/2020 12:59:11</publishTime>
+    </File>
+    <File Include="Card/RaceDayIncident.aspx">
+      <publishTime>01/27/2019 15:22:06</publishTime>
+    </File>
+    <File Include="Card/RaceDayReport.aspx">
+      <publishTime>12/31/2020 11:06:57</publishTime>
+    </File>
+    <File Include="Card/RaceDaySituation.aspx">
+      <publishTime>11/23/2019 20:22:08</publishTime>
+    </File>
+    <File Include="Card/RaceReview.aspx">
+      <publishTime>10/09/2019 10:48:19</publishTime>
+    </File>
+    <File Include="Card/ResultLapTiming.aspx">
+      <publishTime>01/27/2019 13:19:37</publishTime>
+    </File>
+    <File Include="Card/ResultRaceCommentary.aspx">
+      <publishTime>01/27/2019 14:24:25</publishTime>
+    </File>
+    <File Include="Card/ResultSectionalTiming.aspx">
+      <publishTime>12/02/2019 14:03:42</publishTime>
+    </File>
+    <File Include="Card/ResultToteDivident.aspx">
+      <publishTime>01/06/2019 13:07:19</publishTime>
+    </File>
+    <File Include="Card/RevisedHandicapRating.aspx">
+      <publishTime>04/11/2020 19:39:41</publishTime>
+    </File>
+    <File Include="Contact.aspx">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>02/20/2017 18:35:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>02/20/2017 18:35:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>02/20/2017 18:35:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>02/20/2017 18:35:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery-ui.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.accordion.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.all.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.autocomplete.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.base.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.button.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.core.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.datepicker.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.dialog.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.progressbar.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.resizable.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.selectable.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.slider.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.tabs.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.theme.css">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_222222_256x240.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_454545_256x240.png">
+      <publishTime>02/20/2017 18:35:23</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_888888_256x240.png">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery-ui.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.accordion.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.autocomplete.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.button.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.core.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.datepicker.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.dialog.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.progressbar.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.resizable.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.selectable.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.slider.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.tabs.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.theme.min.css">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>05/03/2019 17:20:01</publishTime>
+    </File>
+    <File Include="ErrorLog/03-02-17.txt">
+      <publishTime>02/03/2017 12:53:42</publishTime>
+    </File>
+    <File Include="ErrorLog/04-02-17.txt">
+      <publishTime>02/04/2017 21:28:10</publishTime>
+    </File>
+    <File Include="ErrorLog/06-02-17.txt">
+      <publishTime>02/06/2017 11:52:25</publishTime>
+    </File>
+    <File Include="ErrorLog/07-02-17.txt">
+      <publishTime>02/07/2017 14:53:32</publishTime>
+    </File>
+    <File Include="ErrorLog/09-02-17.txt">
+      <publishTime>02/09/2017 23:49:02</publishTime>
+    </File>
+    <File Include="ErrorLog/11-02-17.txt">
+      <publishTime>02/11/2017 19:00:19</publishTime>
+    </File>
+    <File Include="ErrorLog/12-02-17.txt">
+      <publishTime>02/12/2017 20:40:17</publishTime>
+    </File>
+    <File Include="ErrorLog/13-02-17.txt">
+      <publishTime>02/13/2017 18:11:31</publishTime>
+    </File>
+    <File Include="ErrorLog/14-02-17.txt">
+      <publishTime>02/14/2017 16:59:29</publishTime>
+    </File>
+    <File Include="ErrorLog/15-02-17.txt">
+      <publishTime>02/15/2017 09:49:54</publishTime>
+    </File>
+    <File Include="ErrorLog/16-02-17.txt">
+      <publishTime>02/16/2017 19:36:06</publishTime>
+    </File>
+    <File Include="ErrorLog/17-02-17.txt">
+      <publishTime>02/17/2017 23:14:07</publishTime>
+    </File>
+    <File Include="ErrorLog/18-02-17.txt">
+      <publishTime>02/18/2017 23:57:01</publishTime>
+    </File>
+    <File Include="ErrorLog/19-02-17.txt">
+      <publishTime>02/19/2017 22:11:56</publishTime>
+    </File>
+    <File Include="ErrorLog/20-02-17.txt">
+      <publishTime>02/20/2017 22:31:12</publishTime>
+    </File>
+    <File Include="ErrorLog/22-01-17.txt">
+      <publishTime>01/22/2017 21:49:16</publishTime>
+    </File>
+    <File Include="ErrorLog/25-01-17.txt">
+      <publishTime>01/25/2017 22:39:21</publishTime>
+    </File>
+    <File Include="ErrorLog/26-01-17.txt">
+      <publishTime>01/26/2017 19:39:20</publishTime>
+    </File>
+    <File Include="ErrorLog/27-01-17.txt">
+      <publishTime>01/27/2017 11:02:46</publishTime>
+    </File>
+    <File Include="ErrorLog/28-01-17.txt">
+      <publishTime>01/28/2017 23:25:50</publishTime>
+    </File>
+    <File Include="ErrorLog/29-01-17.txt">
+      <publishTime>01/29/2017 13:06:41</publishTime>
+    </File>
+    <File Include="ErrorLog/31-01-17.txt">
+      <publishTime>01/31/2017 14:00:35</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/20/2017 20:34:19</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/1.jpg">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/2.jpg">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/3.jpg">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/4.jpg">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/accent.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/bg-footer.gif">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/bg.gif">
+      <publishTime>04/23/2019 13:11:16</publishTime>
+    </File>
+    <File Include="Images/bullet.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/calendar.png">
+      <publishTime>01/22/2017 19:35:47</publishTime>
+    </File>
+    <File Include="Images/center_bg.gif">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/csscreme.jpg">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/demopic.gif">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/favicon.ico">
+      <publishTime>02/15/2017 21:34:29</publishTime>
+    </File>
+    <File Include="Images/heroAccent.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/login.gif">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/logo.gif">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/orderedList0.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/orderedList1.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/orderedList2.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/orderedList3.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/orderedList4.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/orderedList5.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/orderedList6.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/orderedList7.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/orderedList8.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/orderedList9.png">
+      <publishTime>02/20/2017 18:33:38</publishTime>
+    </File>
+    <File Include="Images/p1.jpg">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/separator.gif">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/team.gif">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/TickMark.png">
+      <publishTime>11/16/2018 04:32:31</publishTime>
+    </File>
+    <File Include="Images/title.gif">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/tryadmin.gif">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Images/trythedemo.gif">
+      <publishTime>02/20/2011 12:51:28</publishTime>
+    </File>
+    <File Include="Master/AddAgeCondition.aspx">
+      <publishTime>05/08/2017 08:44:07</publishTime>
+    </File>
+    <File Include="Master/AddBit.aspx">
+      <publishTime>02/05/2018 08:41:29</publishTime>
+    </File>
+    <File Include="Master/AddCenter.aspx">
+      <publishTime>08/31/2018 12:32:55</publishTime>
+    </File>
+    <File Include="Master/AddClass.aspx">
+      <publishTime>01/15/2018 15:28:19</publishTime>
+    </File>
+    <File Include="Master/AddClassGroup.aspx">
+      <publishTime>03/18/2018 17:21:55</publishTime>
+    </File>
+    <File Include="Master/AddDiscardRules.aspx">
+      <publishTime>02/05/2018 08:45:10</publishTime>
+    </File>
+    <File Include="Master/AddDistance.aspx">
+      <publishTime>02/05/2018 08:45:10</publishTime>
+    </File>
+    <File Include="Master/AddDistanceGroup.aspx">
+      <publishTime>02/05/2018 08:45:10</publishTime>
+    </File>
+    <File Include="Master/AddEquipment.aspx">
+      <publishTime>02/05/2018 08:45:10</publishTime>
+    </File>
+    <File Include="Master/AddHabit.aspx">
+      <publishTime>02/05/2018 08:45:10</publishTime>
+    </File>
+    <File Include="Master/AddHorse.aspx">
+      <publishTime>10/16/2019 18:49:48</publishTime>
+    </File>
+    <File Include="Master/AddHorseDisease.aspx">
+      <publishTime>04/07/2017 19:02:32</publishTime>
+    </File>
+    <File Include="Master/AddHorseRetirementAge.aspx">
+      <publishTime>02/05/2018 08:45:10</publishTime>
+    </File>
+    <File Include="Master/AddHotliner.aspx">
+      <publishTime>02/05/2018 08:45:10</publishTime>
+    </File>
+    <File Include="Master/AddIncident.aspx">
+      <publishTime>01/17/2018 12:50:32</publishTime>
+    </File>
+    <File Include="Master/AddIncidentImpact.aspx">
+      <publishTime>04/08/2017 18:59:47</publishTime>
+    </File>
+    <File Include="Master/AddMasterAllowance.aspx">
+      <publishTime>05/06/2017 23:08:49</publishTime>
+    </File>
+    <File Include="Master/AddMasterHorseSex.aspx">
+      <publishTime>04/08/2017 21:15:24</publishTime>
+    </File>
+    <File Include="Master/AddMasterStud.aspx">
+      <publishTime>03/26/2017 22:37:17</publishTime>
+    </File>
+    <File Include="Master/AddNation.aspx">
+      <publishTime>04/06/2017 11:05:35</publishTime>
+    </File>
+    <File Include="Master/AddNBCondition.aspx">
+      <publishTime>05/08/2018 15:47:40</publishTime>
+    </File>
+    <File Include="Master/AddOwnerColor.aspx">
+      <publishTime>11/27/2019 23:18:48</publishTime>
+    </File>
+    <File Include="Master/AddProfessional.aspx">
+      <publishTime>12/30/2020 20:24:23</publishTime>
+    </File>
+    <File Include="Master/AddPropectusMaster.aspx">
+      <publishTime>03/15/2017 21:54:40</publishTime>
+    </File>
+    <File Include="Master/AddProspectus.aspx">
+      <publishTime>12/10/2020 14:53:30</publishTime>
+    </File>
+    <File Include="Master/AddRaceTimings.aspx">
+      <publishTime>02/05/2019 16:45:48</publishTime>
+    </File>
+    <File Include="Master/AddRaceTimingsRecord.aspx">
+      <publishTime>03/15/2017 21:55:02</publishTime>
+    </File>
+    <File Include="Master/AddRatingMarkFormatStyle.aspx">
+      <publishTime>05/27/2017 18:46:17</publishTime>
+    </File>
+    <File Include="Master/AddScaleOfWeight.aspx">
+      <publishTime>07/06/2018 20:32:59</publishTime>
+    </File>
+    <File Include="Master/AddSeason.aspx">
+      <publishTime>05/08/2018 15:57:33</publishTime>
+    </File>
+    <File Include="Master/AddSeasonDescription.aspx">
+      <publishTime>09/02/2018 22:49:48</publishTime>
+    </File>
+    <File Include="Master/AddSelector.aspx">
+      <publishTime>05/09/2017 13:45:29</publishTime>
+    </File>
+    <File Include="Master/AddShoe.aspx">
+      <publishTime>04/13/2018 14:23:49</publishTime>
+    </File>
+    <File Include="Master/AddShoeDescription.aspx">
+      <publishTime>05/06/2017 23:57:22</publishTime>
+    </File>
+    <File Include="Master/AddStakeMoney.aspx">
+      <publishTime>06/22/2018 17:16:24</publishTime>
+    </File>
+    <File Include="Master/AddTipster.aspx">
+      <publishTime>05/09/2017 12:47:25</publishTime>
+    </File>
+    <File Include="Master/AddYear.aspx">
+      <publishTime>01/15/2018 14:07:20</publishTime>
+    </File>
+    <File Include="Master/MasterBunchCondition.aspx">
+      <publishTime>02/26/2018 11:40:00</publishTime>
+    </File>
+    <File Include="Master/MasterCurrentForm.aspx">
+      <publishTime>09/08/2017 09:39:11</publishTime>
+    </File>
+    <File Include="Master/MasterDisease.aspx">
+      <publishTime>08/14/2017 08:49:38</publishTime>
+    </File>
+    <File Include="Master/MasterHandicapRatingRange.aspx">
+      <publishTime>09/13/2017 11:33:42</publishTime>
+    </File>
+    <File Include="Master/MasterHandicapWeightPenaltyCondition.aspx">
+      <publishTime>09/17/2017 21:27:17</publishTime>
+    </File>
+    <File Include="Master/MasterHandicapWeightPenaltyCriteria.aspx">
+      <publishTime>09/15/2017 08:33:59</publishTime>
+    </File>
+    <File Include="Master/MasterHorseColor.aspx">
+      <publishTime>05/07/2017 19:06:21</publishTime>
+    </File>
+    <File Include="Master/MasterProfessionalBackground.aspx">
+      <publishTime>09/08/2017 08:43:06</publishTime>
+    </File>
+    <File Include="Master/MasterRaceCardCondition.aspx">
+      <publishTime>09/16/2017 12:58:44</publishTime>
+    </File>
+    <File Include="Master/MasterReligion.aspx">
+      <publishTime>09/08/2017 08:43:19</publishTime>
+    </File>
+    <File Include="Master/MasterYearCenterWise.aspx">
+      <publishTime>09/24/2017 11:47:41</publishTime>
+    </File>
+    <File Include="Master/ProspectusGeneral.aspx">
+      <publishTime>12/18/2020 22:32:08</publishTime>
+    </File>
+    <File Include="Master/ProspectusGeneralSeasonalCondition.aspx">
+      <publishTime>09/16/2017 13:00:28</publishTime>
+    </File>
+    <File Include="Master/ProspectusMasterPermanentCondition.aspx">
+      <publishTime>01/27/2018 22:42:44</publishTime>
+    </File>
+    <File Include="Master/VardictMargin.aspx">
+      <publishTime>05/06/2017 19:16:22</publishTime>
+    </File>
+    <File Include="Master/VerdictMargin.aspx">
+      <publishTime>05/07/2017 20:42:47</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/03/2020 21:10:13</publishTime>
+    </File>
+    <File Include="PopUps/AddHorseOwnerStud.aspx">
+      <publishTime>01/16/2019 13:30:18</publishTime>
+    </File>
+    <File Include="PopUps/AddHorseStatus.aspx">
+      <publishTime>02/06/2018 10:36:42</publishTime>
+    </File>
+    <File Include="PopUps/AddOwner.aspx">
+      <publishTime>03/27/2017 16:33:53</publishTime>
+    </File>
+    <File Include="PopUps/BodyWeight.aspx">
+      <publishTime>07/21/2018 21:44:30</publishTime>
+    </File>
+    <File Include="PopUps/ClassPerformance.aspx">
+      <publishTime>07/19/2018 12:29:21</publishTime>
+    </File>
+    <File Include="PopUps/ClassPerformanceOld.aspx">
+      <publishTime>03/31/2020 12:50:25</publishTime>
+    </File>
+    <File Include="PopUps/CommonExport.aspx">
+      <publishTime>10/15/2018 19:59:57</publishTime>
+    </File>
+    <File Include="PopUps/CurrentMission.aspx">
+      <publishTime>07/26/2018 18:54:58</publishTime>
+    </File>
+    <File Include="PopUps/CurrentStatus.aspx">
+      <publishTime>02/07/2018 12:03:53</publishTime>
+    </File>
+    <File Include="PopUps/DirectGate.aspx">
+      <publishTime>02/19/2018 09:44:16</publishTime>
+    </File>
+    <File Include="PopUps/DistancePerformance.aspx">
+      <publishTime>07/23/2018 09:48:17</publishTime>
+    </File>
+    <File Include="PopUps/DistancePerformanceOld.aspx">
+      <publishTime>03/31/2020 12:50:26</publishTime>
+    </File>
+    <File Include="PopUps/ExpectedClass.aspx">
+      <publishTime>07/18/2018 21:04:42</publishTime>
+    </File>
+    <File Include="PopUps/ExpectedDistance.aspx">
+      <publishTime>07/18/2018 18:44:27</publishTime>
+    </File>
+    <File Include="PopUps/ExpectedHomeClass.aspx">
+      <publishTime>03/20/2017 20:35:40</publishTime>
+    </File>
+    <File Include="PopUps/ExpectedHomeDistance.aspx">
+      <publishTime>03/20/2017 20:39:16</publishTime>
+    </File>
+    <File Include="PopUps/FavourableClassGroup.aspx">
+      <publishTime>07/23/2018 09:51:22</publishTime>
+    </File>
+    <File Include="PopUps/FavourableDistanceGroup.aspx">
+      <publishTime>07/29/2018 11:07:27</publishTime>
+    </File>
+    <File Include="PopUps/Gender.aspx">
+      <publishTime>02/08/2019 15:05:09</publishTime>
+    </File>
+    <File Include="PopUps/HandicapBan.aspx">
+      <publishTime>09/19/2018 21:07:30</publishTime>
+    </File>
+    <File Include="PopUps/HandicapRating.aspx">
+      <publishTime>03/31/2020 12:50:25</publishTime>
+    </File>
+    <File Include="PopUps/HomeClass.aspx">
+      <publishTime>07/18/2018 18:49:57</publishTime>
+    </File>
+    <File Include="PopUps/HomeDistance.aspx">
+      <publishTime>07/18/2018 18:36:57</publishTime>
+    </File>
+    <File Include="PopUps/HorseBan.aspx">
+      <publishTime>07/26/2018 18:19:31</publishTime>
+    </File>
+    <File Include="PopUps/HorseBandage.aspx">
+      <publishTime>02/18/2018 18:48:00</publishTime>
+    </File>
+    <File Include="PopUps/HorseBaseCenter.aspx">
+      <publishTime>07/12/2018 12:40:24</publishTime>
+    </File>
+    <File Include="PopUps/HorseBit.aspx">
+      <publishTime>03/31/2020 12:50:22</publishTime>
+    </File>
+    <File Include="PopUps/HorseCurrentForm.aspx">
+      <publishTime>07/26/2018 18:41:50</publishTime>
+    </File>
+    <File Include="PopUps/HorseEquipment.aspx">
+      <publishTime>03/31/2020 12:50:23</publishTime>
+    </File>
+    <File Include="PopUps/HorseHabit.aspx">
+      <publishTime>05/03/2019 12:34:30</publishTime>
+    </File>
+    <File Include="PopUps/HorseLikingEnviornment.aspx">
+      <publishTime>02/18/2018 19:17:23</publishTime>
+    </File>
+    <File Include="PopUps/HorseMyObservations.aspx">
+      <publishTime>07/27/2018 12:09:20</publishTime>
+    </File>
+    <File Include="PopUps/HorseName.aspx">
+      <publishTime>07/03/2018 09:54:57</publishTime>
+    </File>
+    <File Include="PopUps/HorseProfile.aspx">
+      <publishTime>07/10/2018 16:46:08</publishTime>
+    </File>
+    <File Include="PopUps/HorseRename.aspx">
+      <publishTime>04/09/2020 12:10:46</publishTime>
+    </File>
+    <File Include="PopUps/HorseRunningCenter.aspx">
+      <publishTime>07/12/2018 12:54:20</publishTime>
+    </File>
+    <File Include="PopUps/HorseRunningStyle.aspx">
+      <publishTime>02/15/2018 17:57:24</publishTime>
+    </File>
+    <File Include="PopUps/HorseSaddleNo.aspx">
+      <publishTime>02/18/2018 19:02:14</publishTime>
+    </File>
+    <File Include="PopUps/HorseShoe.aspx">
+      <publishTime>03/31/2020 12:50:24</publishTime>
+    </File>
+    <File Include="PopUps/HorseShoeDescription.aspx">
+      <publishTime>03/31/2020 12:50:23</publishTime>
+    </File>
+    <File Include="PopUps/HorseStationCenter.aspx">
+      <publishTime>03/21/2017 09:25:51</publishTime>
+    </File>
+    <File Include="PopUps/HorseSwimming.aspx">
+      <publishTime>02/11/2019 15:26:21</publishTime>
+    </File>
+    <File Include="PopUps/HorseTrackStar.aspx">
+      <publishTime>02/18/2018 18:55:49</publishTime>
+    </File>
+    <File Include="PopUps/HorseTreadmill.aspx">
+      <publishTime>02/11/2019 17:07:35</publishTime>
+    </File>
+    <File Include="PopUps/HorseVeterinaryProblem.aspx">
+      <publishTime>02/26/2019 12:11:47</publishTime>
+    </File>
+    <File Include="PopUps/MockRaceEntry.aspx">
+      <publishTime>01/24/2018 11:52:16</publishTime>
+    </File>
+    <File Include="PopUps/MyHandicapRating.aspx">
+      <publishTime>07/21/2018 21:42:44</publishTime>
+    </File>
+    <File Include="PopUps/MyHomeClass.aspx">
+      <publishTime>07/18/2018 21:05:45</publishTime>
+    </File>
+    <File Include="PopUps/MyHomeDistance.aspx">
+      <publishTime>07/18/2018 18:42:26</publishTime>
+    </File>
+    <File Include="PopUps/OwnerActual.aspx">
+      <publishTime>12/18/2020 22:25:38</publishTime>
+    </File>
+    <File Include="PopUps/OwnerRecord.aspx">
+      <publishTime>12/18/2020 22:21:45</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalAntiPerson.aspx">
+      <publishTime>01/31/2018 10:03:55</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalBackground.aspx">
+      <publishTime>07/23/2018 10:05:19</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalBaseCenter.aspx">
+      <publishTime>06/26/2018 09:53:07</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalCurrentStatus.aspx">
+      <publishTime>02/09/2018 14:06:08</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalFavDistanceGroup.aspx">
+      <publishTime>07/29/2018 11:54:22</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalFavHomeClass.aspx">
+      <publishTime>07/29/2018 12:01:38</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalHabit.aspx">
+      <publishTime>07/23/2018 10:07:06</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalHomeClass.aspx">
+      <publishTime>07/15/2019 15:45:21</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalHomeDistance.aspx">
+      <publishTime>07/23/2018 10:08:19</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalImportantDates.aspx">
+      <publishTime>07/08/2018 12:52:04</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalJockeyAllowanceStage.aspx">
+      <publishTime>07/16/2019 19:34:29</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalJockeyAprenticeOf.aspx">
+      <publishTime>07/29/2018 12:05:24</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalJockeyWeight.aspx">
+      <publishTime>07/03/2018 12:36:01</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalMyObservation.aspx">
+      <publishTime>06/28/2018 10:47:58</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalName.aspx">
+      <publishTime>01/01/2021 14:59:00</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalNewName.aspx">
+      <publishTime>04/09/2020 12:14:27</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalOtherName.aspx">
+      <publishTime>01/29/2018 15:22:52</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalOwnerColor.aspx">
+      <publishTime>11/13/2018 01:39:38</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalPartners.aspx">
+      <publishTime>12/15/2020 13:49:38</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalPenalty.aspx">
+      <publishTime>07/20/2019 20:03:47</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalProfile.aspx">
+      <publishTime>02/09/2018 14:08:02</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalRelation.aspx">
+      <publishTime>07/12/2018 12:18:51</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalReligion.aspx">
+      <publishTime>09/17/2017 11:06:52</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalStatus.aspx">
+      <publishTime>06/26/2018 15:49:40</publishTime>
+    </File>
+    <File Include="PopUps/ProfessionalTrainerAssistant.aspx">
+      <publishTime>07/29/2018 12:05:56</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusGeneralDates.aspx">
+      <publishTime>07/07/2018 19:33:37</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusGeneralObservation.aspx">
+      <publishTime>06/24/2018 12:50:21</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusGeneralRaceCardCondition.aspx">
+      <publishTime>06/11/2018 20:25:08</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusGeneralRaceName.aspx">
+      <publishTime>04/23/2020 19:33:17</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusGeneralRaceNewName.aspx">
+      <publishTime>04/09/2020 11:40:12</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusGeneralSeasonalCondition.aspx">
+      <publishTime>01/14/2020 10:39:47</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasDistance.aspx">
+      <publishTime>02/23/2018 10:01:40</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterAgeCondition.aspx">
+      <publishTime>03/03/2018 22:48:16</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterBunch.aspx">
+      <publishTime>11/03/2019 20:37:12</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterBunchCondition.aspx">
+      <publishTime>06/19/2018 12:26:21</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterClassic.aspx">
+      <publishTime>03/04/2018 21:14:05</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterEligbleHandRatingRange.aspx">
+      <publishTime>02/26/2018 08:55:42</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterGraded.aspx">
+      <publishTime>03/04/2018 21:14:50</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterGradedNo.aspx">
+      <publishTime>03/04/2018 21:17:16</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterHandicapWeight.aspx">
+      <publishTime>03/07/2018 20:37:03</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterHandicapWeightAsPerAge.aspx">
+      <publishTime>04/09/2020 11:14:33</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterHanRatingRange.aspx">
+      <publishTime>09/08/2018 22:01:56</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterHWPCondition.aspx">
+      <publishTime>03/08/2018 17:58:14</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterInterestedProfessionalBackground.aspx">
+      <publishTime>09/13/2017 12:24:55</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterMillion.aspx">
+      <publishTime>02/24/2018 17:33:16</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterMomenttoCost.aspx">
+      <publishTime>08/14/2017 23:06:44</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterMomenttoType.aspx">
+      <publishTime>08/16/2017 10:24:15</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterOtherCondition.aspx">
+      <publishTime>03/22/2018 10:33:02</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterPermanentCondition.aspx">
+      <publishTime>03/03/2018 22:49:12</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterRaceAbbriviation.aspx">
+      <publishTime>12/10/2020 14:11:14</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterRaceHistory.aspx">
+      <publishTime>03/02/2018 23:19:45</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterRaceName.aspx">
+      <publishTime>08/14/2017 09:05:47</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterRaceNewName.aspx">
+      <publishTime>04/09/2020 11:29:13</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterRaceStatus.aspx">
+      <publishTime>01/12/2020 13:58:39</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterRaceType.aspx">
+      <publishTime>04/19/2020 00:02:54</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterStakeMoneyAddition.aspx">
+      <publishTime>06/18/2018 08:46:02</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMasterSweepStake.aspx">
+      <publishTime>02/24/2018 17:33:48</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusMomenttoPresenter.aspx">
+      <publishTime>10/24/2019 18:51:06</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusRaceMemoryOf.aspx">
+      <publishTime>10/24/2019 19:21:31</publishTime>
+    </File>
+    <File Include="PopUps/ProspectusSponcer.aspx">
+      <publishTime>02/28/2018 21:28:28</publishTime>
+    </File>
+    <File Include="PopUps/StandingNation.aspx">
+      <publishTime>02/09/2018 14:08:01</publishTime>
+    </File>
+    <File Include="PopUps/TargetRace.aspx">
+      <publishTime>08/02/2018 10:21:56</publishTime>
+    </File>
+    <File Include="PopUps/TrainerActual.aspx">
+      <publishTime>12/18/2020 22:27:16</publishTime>
+    </File>
+    <File Include="PopUps/TrainerRecord.aspx">
+      <publishTime>12/18/2020 22:26:45</publishTime>
+    </File>
+    <File Include="Reports/FormGuide.aspx">
+      <publishTime>08/31/2018 12:55:45</publishTime>
+    </File>
+    <File Include="Reports/RaceAllReportDetails.aspx">
+      <publishTime>11/13/2018 06:41:27</publishTime>
+    </File>
+    <File Include="Reports/RaceCardReport.aspx">
+      <publishTime>05/07/2019 18:34:14</publishTime>
+    </File>
+    <File Include="Reports/RaceGuide.aspx">
+      <publishTime>01/25/2021 13:55:30</publishTime>
+    </File>
+    <File Include="Reports/RaceReports.aspx">
+      <publishTime>11/09/2018 00:52:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.js">
+      <publishTime>03/14/2017 08:08:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.min.js">
+      <publishTime>03/14/2017 08:08:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.20.js">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.20.min.js">
+      <publishTime>02/20/2017 18:35:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.9.js">
+      <publishTime>03/13/2017 20:46:50</publishTime>
+    </File>
+    <File Include="Scripts/jquery1.7.2.min.js">
+      <publishTime>03/13/2017 20:44:06</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.5.3.js">
+      <publishTime>02/20/2017 18:35:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>02/20/2017 18:35:33</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>02/20/2017 18:35:33</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/GridView.js">
+      <publishTime>02/20/2017 18:35:33</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>02/20/2017 18:35:33</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>02/20/2017 18:35:33</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>02/20/2017 18:35:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>02/20/2017 18:35:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>02/20/2017 18:35:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>02/20/2017 18:35:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>02/20/2017 18:35:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>02/20/2017 18:35:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>02/20/2017 18:35:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>02/20/2017 18:35:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>02/20/2017 18:35:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>02/20/2017 18:35:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>02/20/2017 18:35:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>02/20/2017 18:35:33</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/TreeView.js">
+      <publishTime>02/20/2017 18:35:33</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>02/20/2017 18:35:33</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>02/20/2017 18:35:33</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>02/20/2017 18:35:33</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>03/14/2017 08:09:00</publishTime>
+    </File>
+    <File Include="Settings.StyleCop">
+      <publishTime>02/27/2017 18:41:46</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>10/03/2020 21:26:39</publishTime>
+    </File>
+    <File Include="Sitebackup.Master">
+      <publishTime>03/01/2017 11:58:11</publishTime>
+    </File>
+    <File Include="Styles.aspx">
+      <publishTime>05/10/2019 19:14:45</publishTime>
+    </File>
+    <File Include="Styles/jquery-ui-1.8.9.css">
+      <publishTime>03/13/2017 20:47:54</publishTime>
+    </File>
+    <File Include="Styles/Site.css">
+      <publishTime>01/22/2017 19:35:48</publishTime>
+    </File>
+    <File Include="Styles/style.css">
+      <publishTime>04/12/2020 16:31:18</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/25/2021 18:07:08</publishTime>
+    </File>
+    <File Include="WebForm1.aspx">
+      <publishTime>10/03/2020 21:18:34</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
